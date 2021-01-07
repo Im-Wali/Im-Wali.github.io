@@ -21,9 +21,14 @@ title_separator          : "-"
 subtitle                 : "미정"# site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
-url                      : "https://imjaeyoung.github.io/itNote/"
+url                      : "https://imjaeyoung.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/ImJaeYoung/imjaeyoung.github.io"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ImJaeYoung/imjaeyoung.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+comments:
+  provider  : "staticman_v2"
+  staticman:
+    branch    : "master"
+    endpoint  : https://{your Staticman v3 API}/v3/entry/github/
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
