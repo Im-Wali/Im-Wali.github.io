@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "미정"
+title                    : "임와리"
 title_separator          : "-"
-subtitle                 : "미정"# site tagline that appears below site title in masthead
-name                     : "Im JaeYoung"
+subtitle                 : "임와리의 블로그"# site tagline that appears below site title in masthead
+name                     : "Im-Wali"
 description              : "빠르지 않지만 멈추지 않고 꾸준하게...."
-url                      : "https://imjaeyoung.github.io/"
+url                      : "https://im-wali.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "ImJaeYoung/imjaeyoung.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Im-Wali/Im-Wali.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 comments:
   provider  : "staticman_v2"
   staticman:
@@ -98,7 +98,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Im Jae Young"
+  name             : "Im-Wali"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "빠르지 않지만 멈추지 않고<br/>꾸준하게...."
   location         : "Seoul"
@@ -118,7 +118,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ImJaeYoung"
+      url: "https://github.com/Im-Wali"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -134,7 +134,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ImJaeYoung"
+      url: "https://github.com/Im-Wali"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
