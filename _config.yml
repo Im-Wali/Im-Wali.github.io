@@ -19,8 +19,8 @@ locale                   : "ko"
 title                    : "미정"
 title_separator          : "-"
 subtitle                 : "미정"# site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Im JaeYoung"
+description              : "빠르지 않지만 멈추지 않고 꾸준하게...."
 url                      : "https://imjaeyoung.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ImJaeYoung/imjaeyoung.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "Im Jae Young"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "아직 시작이라는 출발선에서 <br/> 우물쭈물되고 있는 거북이"
+  bio              : "빠르지 않지만 멈추지 않고<br/>꾸준하게...."
   location         : "Seoul"
   email            :
   links:
