@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko"
 title                    : "임와리"
 title_separator          : "-"
-subtitle                 : "임와리의 블로그"# site tagline that appears below site title in masthead
+subtitle                 : #site tagline that appears below site title in masthead
 name                     : "Im-Wali"
 description              : "빠르지 않지만 멈추지 않고 꾸준하게...."
 url                      : "https://im-wali.github.io/"
@@ -92,8 +92,8 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-W5ENW891JD"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -280,7 +280,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true # true
       share: true
       related: true
+      show_date: true
