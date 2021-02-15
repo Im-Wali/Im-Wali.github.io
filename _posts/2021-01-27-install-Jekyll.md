@@ -2,7 +2,9 @@
 title:  "Jekyll이란?"
 search: false
 tag:
+  - Gihub Page
   - Jekyll
+  - Liquid
 last_modified_at: 2021-01-27T08:00:34-05:00
 ---
 
