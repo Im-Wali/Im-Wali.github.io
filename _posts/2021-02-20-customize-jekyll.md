@@ -18,7 +18,9 @@ tags:
 # 3. 언어 선택
 
   * 블로그를 시작하기 앞서 먼저 언어 설정을 해줘야 된다. **"minimal-mistakes-master"** 의 경우 많은 언어를 지원하기 때문에 당연히 한국어도 지원한다. **_data/ui-text.yml** 파일에 각종 언어 설정 목록이 있어 참고하면 되고, **_config.yml** 에서 locale을 ko로 변경 하면 기본적인 텍스트 한글로 변환된다.
-참고 : <a href="https://mmistakes.github.io/minimal-mistakes/docs/ui-text/" target="_blank">https://mmistakes.github.io/minimal-mistakes/docs/ui-text/</a>
+
+  <br/>
+  참고 : <a href="https://mmistakes.github.io/minimal-mistakes/docs/ui-text/" target="_blank">https://mmistakes.github.io/minimal-mistakes/docs/ui-text/</a>
 
 # 2. 불필요한 파일 *
 
@@ -68,24 +70,27 @@ tags:
 
 # 4. 사이트 제목 및 URL 설정
 
-	**_config.yml에서**
-	* tiutle : "블로그 이름"
-	* Subtitle : "서브 타이틀"
-	* Name : "왼쪽 profile에 기재되는 이름."
-	* Description : "사이트 설명"
-	* Url : "사이트주소(githubpage)"
-	* Repository : "git repository 주소"
-	* 시간대 : timezone: Asia/Seoul <br/> -> "jekyll 4.2.0 | Error:  tzinfo" 에러 발생 시 Gemfile 에 "gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]" 추가.
+  **_config.yml에서 아래 참고하여 설정**
+  * tiutle : "블로그 이름"
+  * Subtitle : "서브 타이틀"
+  * Name : "왼쪽 profile에 기재되는 이름."
+  * Description : "사이트 설명"
+  * Url : "사이트주소(githubpage)"
+  * Repository : "git repository 주소"
+  * 시간대 : timezone: Asia/Seoul <br/> -> "jekyll 4.2.0 | Error:  tzinfo" 에러 발생 시 Gemfile 에 "gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]" 추가.
 
 # 5. Category, tags 세팅
 
   * 포스팅을 올릴때 태그 혹은 카테고리를 사용하면 관련 포스팅을 모아서 볼 수 있다. **"minimal-mistakes-master"** 의 경우 헤더에 아래의 사진과 같이 추가하면 간단하게 설정 가능하다.
 
   <br/>
+  **설정**
   ![image-center](/assets/images/2021-02-20-catogry-tags.png){: .align-center}
 
   <br/>
+  **tags**
   ![image-center](/assets/images/2021-02-20-tags-sample.png){: .align-center}
 
   <br/>
+  **category**
   ![image-center](/assets/images/2021-02-20-category-sample.png){: .align-center}
