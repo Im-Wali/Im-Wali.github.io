@@ -1,5 +1,5 @@
 ---
-title:  "Jekyll 테마 선택하기"
+title:  "커스텀 마이즈(기본기능)"
 search: false
 categories:
   - GithubPage
@@ -14,6 +14,11 @@ tags:
 # 커스텀 마이즈 하기
 
   * 지난 시간까지 **Jekyll** 과 **GithubPage** 를 이용해 블로그 만들기 까지 진행했습니다. 하지만 현재로 blog를 포스팅 하기에는 부족한 부분이 많습니다. 이런 부분들을 보완하기 위해서 이번 포스팅 부터는 블로그를 커스텀 마이즈하고 기능들을 추가해 보도록 하겠습니다. 해당 포스팅은 **"minimal-mistakes-master"** 테마 기준이며, 테마에 따라서 설정하는 방법이 다를 수도 있습니다.
+
+# 3. 언어 선택
+
+  * 블로그를 시작하기 앞서 먼저 언어 설정을 해줘야 된다. **"minimal-mistakes-master"** 의 경우 많은 언어를 지원하기 때문에 당연히 한국어도 지원한다. **_data/ui-text.yml** 파일에 각종 언어 설정 목록이 있어 참고하면 되고, **_config.yml** 에서 locale을 ko로 변경 하면 기본적인 텍스트 한글로 변환된다.
+참고 : <a href="https://mmistakes.github.io/minimal-mistakes/docs/ui-text/" target="_blank">https://mmistakes.github.io/minimal-mistakes/docs/ui-text/</a>
 
 # 2. 불필요한 파일 *
 
