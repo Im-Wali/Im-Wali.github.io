@@ -277,9 +277,6 @@ defaults:
   - scope:
       path: ""
       type: posts
-  - scope:
-    path: ""
-    type: category
     values:
       layout: single
       author_profile: true
