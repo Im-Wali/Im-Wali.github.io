@@ -1,6 +1,8 @@
 ---
 title:  "Jekyll이란?"
 search: false
+categories:
+  - GithubPage
 tag:
   - Gihub Page
   - Jekyll

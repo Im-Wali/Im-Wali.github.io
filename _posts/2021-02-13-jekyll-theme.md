@@ -1,6 +1,8 @@
 ---
 title:  "Jekyll 테마 선택하기"
 search: false
+categories:
+  - GithubPage
 tag:
   - Gihub Page
   - Jekyll
@@ -41,7 +43,7 @@ last_modified_at: 2021-01-27T08:00:34-05:00
   - <a href="https://github.com/sylhare/Type-on-Strap" target="_blank">https://github.com/sylhare/Type-on-Strap</a>
   - 깔끔하고, 각 태그별로 볼수 있는 기능이 있으며, 검색 등 편의성에서 편해 보임.
   - 디자인이 깔끔함.
-  - 레프트바 없음. 
+  - 레프트바 없음.
   - 메뉴를 그룹핑해서 보여주기 힘들거 같음?
 
 
@@ -77,7 +79,7 @@ last_modified_at: 2021-01-27T08:00:34-05:00
   - 다양한 기능 제공함.
   - 디자인이 상식적으로 되어 있음.
   - 검색, 댓글, gooble Analytics 등 다양한 기능 제공.
-  - 사용법 등 다양한 예제 들 존재 (<a href="https://mmistakes.github.io/minimal-mistakes" target="_blank">https://mmistakes.github.io/minimal-mistakes</a>) 
+  - 사용법 등 다양한 예제 들 존재 (<a href="https://mmistakes.github.io/minimal-mistakes" target="_blank">https://mmistakes.github.io/minimal-mistakes</a>)
   - 한국어 지원.
 
 
