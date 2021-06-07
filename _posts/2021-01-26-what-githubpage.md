@@ -3,7 +3,7 @@ title:  "Github Page 란?"
 search: false
 categories:
   - GithubPage
-tag:
+tags:
   - GithubPage
   - Githunb
   - Github page 란?
