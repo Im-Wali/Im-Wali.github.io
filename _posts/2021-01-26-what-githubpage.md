@@ -1,6 +1,8 @@
 ---
 title:  "Github Page 란?"
 search: false
+category:
+  - GithubPage
 tag:
   - GithubPage
   - Githunb
@@ -30,7 +32,7 @@ last_modified_at: 2021-01-17T08:00:34-05:00
  Github Page를 앞서 우선적으로 Github가 무엇인지 설명이 필요하다. Github란 Git을 조금더 편하게 이용하도록 만든 Git 서버 호스팅 서비스이고,
  오픈소스 소프트웨어의 중심(Hub) 역할을 하면서 오픈소스 프로젝트가 널리 퍼지는데 크게 기여하고 있는 서비스이다.<br/>
  조금더 쉽게 설명하자면 Git은 형상 관리 도구(Configuration Management Tool)로서 한마디로 소스를 관리해주는 툴이라고 생각하면 되고, 이를 조금더 편하게 사용하기 위한것이 Github라고 생각하면 된다.
- 이 Github는 개발자 혹은 IT를 하는 사람들은 꼭 필수적으로 사용해야되는 것이니 꼭 기억해두는것이 좋다. 
+ 이 Github는 개발자 혹은 IT를 하는 사람들은 꼭 필수적으로 사용해야되는 것이니 꼭 기억해두는것이 좋다.
 
 
 ### 1-2. Github Page 란?
@@ -66,7 +68,7 @@ Github Page로 작성된 blog를 Github에서는 무료로 호스팅 해준다. 
 * 단점
   - **어렵다.**<br/>
     초기에 설정할때 엄청난 어려움을 겪는다. 우선 개발자가 아닌 사람에게는 거의 벽의 가깝다고 생각한다. 물론 간단 IT 지식을 가진 사람이라면 끈기만 있다면 충분히 할 수 있다.
-  
+
   - **포스팅할때 시간이 오래 걸린다.**<br/>
     지금까지 포스팅을 하면서 느낀 부분이 다른 위지윅 에디터를 지원하는 블로그에 비해 포스팅을 작성하는 시간이 오래 걸린다.
 
@@ -77,8 +79,8 @@ Github Page로 작성된 blog를 Github에서는 무료로 호스팅 해준다. 
  이제부터 Github Page를 구성하기 위한 첫단계로 Github를 가입하고 Local에 Repository를 구성해보겠다.
 
 ### 2-1. Github 회원가입/로그인 하기
-Github Page로 blog를 만들기 위해서는 우선 Github 계정이 있어야 한다. 
-<https://github.com/>로 이동하여 아래와 같은 화면을 볼수 있다. 아래에서 "Sign up"을 클릭 하면 회원가입 페이지로 이동한다. 
+Github Page로 blog를 만들기 위해서는 우선 Github 계정이 있어야 한다.
+<https://github.com/>로 이동하여 아래와 같은 화면을 볼수 있다. 아래에서 "Sign up"을 클릭 하면 회원가입 페이지로 이동한다.
 계정이 있으면 바로 "Sign in"으로 로그인하면 된다.
 
 
@@ -152,4 +154,3 @@ Github Desk에서 "File > Clone Repository" 클릭 하여, "URL" 탭에 복사�
 
 
 다음 포스팅에서는 Local Repository에 Jekyll 환경을 구성하겠다.
-

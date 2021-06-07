@@ -67,12 +67,19 @@ cd im-wali1
 bundle exec jekyll serve
 ```
 <br/>
+
 ![image-center](/assets/images/2021-01-27-start-command-prompt-with-ruby-03.png){: .align-center}
+
 <br/>
+
 ![image-center](/assets/images/2021-01-27-start-command-prompt-with-ruby-04.png){: .align-center}
+
 <br/>
+
 ![image-center](/assets/images/2021-01-27-start-command-prompt-with-ruby-05.png){: .align-center}
+
 <br/>
+
 ![image-center](/assets/images/2021-01-27-start-command-prompt-with-ruby-06.png){: .align-center}
 
 
@@ -103,7 +110,7 @@ bundle exec jekyll serve
 
 # 5. Liquid 사용법
 - 지금까지 github page와 Jekyll로 샘플 블로그를 만들어 봤다. 이제부터 테마 선택과 커스텀 마이즈에 대해서 포스팅 할 것인데 그전에 알아 되는 것이 있다.
-바로 Liquid라는 것이다. 이 부분이 일반적인 HTML이나 Javascript와 다르게 ruby를 기반으로 하기 떄문에 익숙하지 않다. 그래서 간단하게 Liquid가 무엇인지와 구성요소에 대해서 설명할려고한다. 
+바로 Liquid라는 것이다. 이 부분이 일반적인 HTML이나 Javascript와 다르게 ruby를 기반으로 하기 떄문에 익숙하지 않다. 그래서 간단하게 Liquid가 무엇인지와 구성요소에 대해서 설명할려고한다.
 해당 내용들은 <a href="https://jekyllrb-ko.github.io/docs/">Jekyll Docs</a>에서 가지고 왔다. 궁금한 부분이 더 있다면 해당 링크로 이동해서 확인해보면 될거 같다.
 
 * Liquid는 템플릿 언어로서 세 가지 부분으로 나눌 수 있다. 세가지는 오브젝트와 태그, 필터이다.
@@ -118,8 +125,8 @@ bundle exec jekyll serve
   태그는 템플릿의 논리 연산과 흐름을 제어한다. 중괄호와 퍼센트 문자로 표시한다. {% raw %}{%{% endraw %}  와 {% raw %}%}{% endraw %} 로 표시.
 
   ```liquid
-  {% raw %}{% if page.show_sidebar %}{% endraw %} 
-    {% raw %}<div class="sidebar"> sidebar content </div> {% endraw %} 
+  {% raw %}{% if page.show_sidebar %}{% endraw %}
+    {% raw %}<div class="sidebar"> sidebar content </div> {% endraw %}
   {% raw %}{% endif %}{% endraw %}
   ```
 
