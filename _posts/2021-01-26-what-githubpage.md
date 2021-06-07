@@ -1,7 +1,7 @@
 ---
 title:  "Github Page 란?"
 search: false
-category:
+categories:
   - GithubPage
 tag:
   - GithubPage
