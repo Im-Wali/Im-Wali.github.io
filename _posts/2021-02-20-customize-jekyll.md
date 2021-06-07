@@ -78,3 +78,9 @@ tags:
 
   <br/>
   ![image-center](/assets/images/2021-02-20-catogry-tags.png){: .align-center}
+
+  <br/>
+  ![image-center](/assets/images/2021-02-20-tags-sample.png){: .align-center}
+
+  <br/>
+  ![image-center](/assets/images/2021-02-20-category-sample.png){: .align-center}
