@@ -3,7 +3,7 @@ title:  "Jekyll이란?"
 search: false
 categories:
   - GithubPage
-tag:
+tags:
   - Gihub Page
   - Jekyll
   - Liquid

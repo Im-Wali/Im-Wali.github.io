@@ -3,7 +3,7 @@ title:  "Jekyll 테마 선택하기"
 search: false
 categories:
   - GithubPage
-tag:
+tags:
   - Gihub Page
   - Jekyll
   - 지킬

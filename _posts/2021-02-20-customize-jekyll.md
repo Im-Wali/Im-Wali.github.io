@@ -1,6 +1,8 @@
 ---
 title:  "Jekyll 테마 선택하기"
 search: false
+categories:
+  - GithubPage
 tags:
   - Gihub Page
   - Jekyll
@@ -70,7 +72,7 @@ tags:
 	* Repository : "git repository 주소"
 	* 시간대 : timezone: Asia/Seoul <br/> -> "jekyll 4.2.0 | Error:  tzinfo" 에러 발생 시 Gemfile 에 "gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]" 추가.
 
-# 5. Category, tags 등록
+# 5. Category, tags 세팅
 
   * 포스팅을 올릴때 태그 혹은 카테고리를 사용하면 관련 포스팅을 모아서 볼 수 있다. **"minimal-mistakes-master"** 의 경우 헤더에 아래의 사진과 같이 추가하면 간단하게 설정 가능하다.
 
