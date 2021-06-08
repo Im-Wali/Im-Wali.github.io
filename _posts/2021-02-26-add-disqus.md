@@ -52,7 +52,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-button-get-started.png){: .align-center}
 
-  * "I want to sintall Disqus on my site"를 클릭한다.
+  * "I want to install Disqus on my site"를 클릭한다.
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-button-install.png){: .align-center}
 
@@ -88,7 +88,7 @@ tags:
   <br/>
 
   * 추가로 맨밑에 "defaults"에 comments를 true변경해줘야 된다.
-  
+
   ```ruby
   defaults:
   - scope:
