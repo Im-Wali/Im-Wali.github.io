@@ -34,7 +34,7 @@ tags:
   ![image-center](/assets/images/2021-02-26-disqus-main.png){: .align-center}
   <br/>
 
-  * 아래와 같은 화면에서 회원 가입을 진행한다. 필자의 경우는 Google 계정을 통해 회원가입을 했다
+  * 아래와 같은 화면에서 회원 가입을 진행한다. 필자의 경우는 Google 계정을 통해 회원가입을 했다.
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-signup.png){: .align-center}
 
