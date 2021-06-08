@@ -77,32 +77,33 @@ tags:
   ![image-center](/assets/images/2021-02-26-disqus-complete-new-site.png){: .align-center}
 
 ## 2-3. Disqus 설정
-  * _config.yml 파일에서 shortName을 변경해줘야 된다. 추가로 맨밑에 "defaults"에 comments를 true변경해줘야 된다.
-  <br/>
+  * _config.yml 파일에서 shortName을 변경해줘야 된다.
+
   ```ruby
   comments:
   provider: "disqus"
   disqus:
-    shortname: "your-disqus-shortname"
+  shortname: "your-disqus-shortname"
   ```
   <br/>
 
-  <br/>
+  * 추가로 맨밑에 "defaults"에 comments를 true변경해줘야 된다.
+  
   ```ruby
   defaults:
-    - scope:
-        path: ""
-        type: posts
-      values:
-        layout: single
-        author_profile: true
-        read_time: false
-        comments: true
-        share: true
-        related: true
-        show_date: true
-    ```
-    <br/>
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+      show_date: true
+  ```
+  <br/>
 
 ## 2-4 댓글 적용 화면
   * 위와 같이 진행하면 아래와 같은 화면처럼 적용된것을 볼 수 있다.
