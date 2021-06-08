@@ -78,7 +78,7 @@ tags:
   * Url : "사이트주소(githubpage)"
   * Repository : "git repository 주소"
   * 시간대 : timezone: Asia/Seoul  
-  -> "jekyll 4.2.0 | Error:  tzinfo" 에러 발생 시 Gemfile 에 "gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]" 추가.
+  ->"jekyll 4.2.0 | Error:  tzinfo" 에러 발생 시 Gemfile 에 "gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]" 추가.
 
 # 5. Category, tags 세팅
 
