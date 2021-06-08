@@ -1,5 +1,5 @@
 ---
-title:  "커스텀 마이즈(기본기능)"
+title:  "기본적인 커스텀 마이즈 하기"
 search: false
 categories:
   - GithubPage

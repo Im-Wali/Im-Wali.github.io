@@ -1,5 +1,5 @@
 ---
-title:  "댓글 기능 추가"
+title:  "Disqus로 댓글 기능 추가하기"
 search: false
 categories:
   - GithubPage
