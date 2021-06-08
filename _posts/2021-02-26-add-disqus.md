@@ -18,18 +18,18 @@ tags:
 
 # 1. Disqus
 
-  * Disqus란 소셜 댓글 서비스의 하나이다. 소셜 댓글 서비스란 소설미디어(SNS)를 활용한 댓글 시스템으로 SNS와 연동하여 댓글을 달 수 있게 해주는 서비스 입니다. 다른 계정이 필요 없이 SNS 계정만 있으면 댓글을 달 수 있기 때문에 사용자 편의성 측면에서도 좋다. 그리고 **"minimal-mistakes-master"** 에서는 추가적으로 설치해야되는 파일 없이 계정 등록과 설정만 수정하면 바로 댓글 기능을 추가할 수 있습니다.
+  * Disqus란 소셜 댓글 서비스의 하나이다. 소셜 댓글 서비스란 소설미디어(SNS)를 활용한 댓글 시스템으로 SNS와 연동하여 댓글을 달 수 있게 해주는 서비스이다. 다른 계정이 필요 없이 SNS 계정만 있으면 댓글을 달 수 있기 때문에 사용자 편의성 측면에서도 좋다. 그리고 **"minimal-mistakes-master"** 에서는 추가적으로 설치해야되는 파일 없이 계정 등록과 설정만 수정하면 바로 댓글 기능을 추가할 수 있다.
 
 
 # 2. Disqus를 통한 댓글 기능 추가
 
   * Disqus를 통해 댓글 기능을 추가하고 싶다면 아래와 같은 순서로 진행하면 된다.
 
-  ## 2-1. Disqus 회원가입
+## 2-1. Disqus 회원가입
 
   * 우선 사이트로 이동하면 아래와 같은 화면을 볼 수 있다. 여기서 우측 상단의 "Get Started" 버튼을 클릭하여 회원 가입 페이지로 이동한다.
   <br/>
-  사이트 주소 : <a href="https://disqus.com/" target="_blank">https://disqus.com/</a>
+  * 사이트 주소 : <a href="https://disqus.com/" target="_blank">https://disqus.com/</a>
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-main.png){: .align-center}
   <br/>
@@ -38,7 +38,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-signup.png){: .align-center}
 
-  ## 2-2. Githupage 블로그 등록하기
+## 2-2. Githupage 블로그 등록하기
 
   * 로그인 후에 profile의 클릭하면 "Home"이라는 부분 클릭한다.
   <br/>
@@ -60,7 +60,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-create-new-site.png){: .align-center}
 
-  * 가격 정책을 선택한다. 이때 밑에 자세히 보면 Basic이라고 되어 있다. 이 basic을 선택하면 된다.
+  * 가격 정책을 선택한다. 이때 밑에 자세히 보면 Basic이라고 되어 있다. 이 basic을 선택하면 된다. basic을 선택하면 따로 금액 결제는 없다.
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-button-basic.png){: .align-center}
 
@@ -76,7 +76,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-02-26-disqus-complete-new-site.png){: .align-center}
 
-  ## 2-3. Disqus 설정
+## 2-3. Disqus 설정
   * _config.yml 파일에서 shortName을 변경해줘야 된다. 추가로 맨밑에 "defaults"에 comments를 true변경해줘야 된다.
   <br/>
   ```ruby
@@ -101,10 +101,10 @@ tags:
         share: true
         related: true
         show_date: true
-  ```
-  <br/>
-
-  ## 2-4 댓글 적용 화면
-    * 위와 같이 진행하면 아래와 같은 화면처럼 적용된것을 볼 수 있다.
+    ```
     <br/>
-    ![image-center](/assets/images/2021-02-26-disqus-comments.png){: .align-center}
+
+## 2-4 댓글 적용 화면
+  * 위와 같이 진행하면 아래와 같은 화면처럼 적용된것을 볼 수 있다.
+  <br/>
+  ![image-center](/assets/images/2021-02-26-disqus-comments.png){: .align-center}
