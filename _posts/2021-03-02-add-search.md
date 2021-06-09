@@ -12,7 +12,7 @@ tags:
 
 <br/>
 # 검색 & CI 기능 추가(Algolia, Travis-ci)
-  * 블로그에서 게시된 글을 검색하는 기능을 수동으로 추가해줘야 한다. ***"minimal-mistakes-master"*** 의 경우 "Lunr", "Algolia", "Google Custom Search Engine", "Google Search Console"로 검색 기능을 추가할 수 있다. 이중에 금일 포스팅에서 **"Algolia"** 을 통해 검색 기능을 추가해보겠다. 추가적으로 Travis CI를 통한 CI 기능도 같이 추가하도록 하겠다
+  * 블로그에서 게시된 글을 검색하는 기능을 수동으로 추가해줘야 한다. ***"minimal-mistakes-master"*** 의 경우 "Lunr", "Algolia", "Google Custom Search Engine", "Google Search Console"로 검색 기능을 추가할 수 있다. 이중에 금일 포스팅에서 **"Algolia"** 을 통해 검색 기능을 추가해보겠다. 추가적으로 Travis CI를 통한 CI 기능도 추가해보도록 하겠습니다.
 
 # 1. Algolia
 
@@ -102,10 +102,13 @@ tags:
 
 
 # 2. Travis CI
-  * ***Travis CI는 호스팅 지속적 통함(CI)의 서비스의 하나로서 Github에 호스팅되는 소프트웨어 프로젝트의 빌드, 테스트를 위해 사용한다. (위키백과)*** 이와 같이 Travis CI는 Github에서 호스팅 하는 프로젝트를 빌드 테스트하기 위하 CI 툴로서 Github와 호환이 잘되기 떄문에 간단하게 설정하여 사용할 수 있다. Travis CI를 사용하면 자신이 수정한 소스가 빌드되는 과정을 볼 수 있으며 에러가 나는 경우 로그도 확인할 수 있다. Github page로 블로그를 한다면 필수적으로 사용해야되는 기능이라고 생각한다.
+  * ***Travis CI는 호스팅 지속적 통함(CI)의 서비스의 하나로서 Github에 호스팅되는 소프트웨어 프로젝트의 빌드, 테스트를 위해 사용한다. (위키백과)*** 이와 같이 Travis CI는 Github에서 호스팅 하는 프로젝트를 빌드, 테스트하기 위하 CI 툴로서 Github와 호환이 잘되기 떄문에 간단하게 설정하여 사용할 수 있다. Travis CI를 사용하면 자신이 수정한 소스가 빌드되는 과정을 볼 수 있으며 에러가 나는 경우 로그도 확인할 수 있다. Github page로 블로그를 한다면 필수적으로 사용해야되는 기능이라고 생각한다.
 
 ## 2-1. Travis CI 회원 가입 하기
   * 우선 아래 링크를 통해 사이트로 이동하여 회원 가입을 진행한다. github의 Repository에 접근해야 되기 때문에 Github 아이디로 회원 가입한다.
+
+  <br/>
+  * 사이트 주소 : <a href="https://travis-ci.org/" target="_blank">https://travis-ci.org/</a>
 
   <br/>
   ![image-center](/assets/images/2021-03-01-travis-ci-main.png){: .align-center}
@@ -127,7 +130,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-03-01-travis-ci-setting-all-repository.png){: .align-center}
 
-## 2-2. API Key 설정
+## 2-3. API Key 설정
   * 로그인 후 우측 상단의 "setting" 버튼을 통해 설정 페이지로 이동하여 Githupage Repository의 "Settings"를 클릭한다.
 
   <br/>
@@ -138,7 +141,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-03-01-travis-ci-setting-api02.png){: .align-center}
 
-## 2-3. 사용법
+## 2-4. 사용법
   * 사용법은 기존에 사용하는 방식으로 포스팅하면 자동으로 빌드가 되기 때문에 테스트를 해볼 분들은 현재 수정한 소스를 Push해보면 아래와 같은 화면을 볼 수 있다. 만일 빌드 중 에러가 발생하면 친절하게 github 계정으로 이메일이 발송된다. 이와 같은 기능 때문에 Github Page를 쓰는 분이라면 꼭 추가해야되는 기능이다.
 
   <br/>
