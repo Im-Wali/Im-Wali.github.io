@@ -8,6 +8,7 @@ tags:
   - Jekyll
   - 지킬
   - 검색
+  - Travis CI
 ---
 
 <br/>
