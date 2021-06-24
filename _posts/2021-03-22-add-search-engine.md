@@ -21,7 +21,7 @@ tags:
 
 
   <br/>
-  ![image-center](/assets/images/2021-03-22-google-search-cnosole.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-console.png){: .align-center}
 
 # 1-1. Google Search Console 적용하기
  * 우선 Google Search Cnosole를 적용하기 위해서는 로그인이 필요하다. 아래 링크로 이동하여 회원가입 및 로그인을 진행한다.
