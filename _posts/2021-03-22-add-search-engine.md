@@ -1,5 +1,5 @@
 ---
-title:  "구글 Analytics 기능 추가"
+title:  "검색 엔진에 노출하기"
 search: false
 categories:
   - GithubPage
@@ -7,78 +7,84 @@ tags:
   - Gihub Page
   - Jekyll
   - 지킬
-  - Google Analytics
+  - Google Search Console
 ---
-
 <br/>
-# 구글 Analytics 기능 추가하기
-  * 블로그에 들어오는 방문자에 대한 분석을 하기 위해서는 Google analytics를 연동해줘야 된다. 이를 통해 방문자에 대한 분석 및 추적을 할 수 있어 블로그를 운영하는데 많은 도움이 된다.
+# 검색 엔진에 노출하기
+  * 블로그를 한다는 것은 내가 작성한 컨텐츠를 공유를 하겠다는 의미이다. 그럴려면 각종 포털 사이트에서 내가 작성한 포스팅이 검색이 되어야 한다. 이번 포스팅에서는 각종 포털 사이트의 검색 엔진에서 자신의 포스팅을 노출하는 방법에 대해 알아 보겠다.
 
-# 1. Google Analytics
+# 1. Google Search Console
 
-  * 구글 애널리틱스(Google Analytics)는 현재 구글 마케팅 플랫폼 브랜드 내의 플랫폼으로서, 웹사이트 트래픽을 추적하고 보고하는 구글이 제공하는 웹 애널리틱스 서비스이다.
+  * Google Search Console은 구글의 전 구글 웹마스터들이 개발한 웹 서비스로서, 웹 마스터들이 자신들의 웹사이트의 보이는 부분을 최적화하고 인덱싱 상태를 검색할 수 있게 한다. [위키백과]
 
-  * google analytics의 장점은 무료라는 것이다. 월간 조회수에 따라 한도가 있기는 하지만 개인 블로그를 하기에는 충분한 용량이기 때문에 무료라고 봐도 무방하다. 또 다른 장점으로는 다양한 기능 제공이다. 시각적으로 정보를 잘 보여주며, 다양한 목표 설정 등 다양한 기능을 제공한다. 다만 단점으로는 많은 정보와 기능들을 내포하고 있기 때문에 사용하는데 있어서 익숙해지는 시간이 필요하다.
+  * Google Search Console은 구글에서 제공하는 웹사이트 무료 툴로 구글에 등록한 자사의 웹사이트를 어떻게 인식하고 있는지 대한 정보를 제공한다. 예전에는 구글 웹 마스터 도구라는 명칭으로 사용하였지만, 현재는 Google Search Cnosole이라는 명칭으로 불리고 있다. 여기에 색인을 추가해야 우리가 힘들게 만든 블로그가 Google 검색 시 나타날 수 있다.
+
 
   <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-cnosole.png){: .align-center}
 
-# 2. Google Analytics 기본 설정하기
- * 우선 Google Analytics을 설정하기 위해서는 우선 아래 URL로 이동하여 회원가입 혹은 로그인을 한다.
+# 1-1. Google Search Console 적용하기
+ * 우선 Google Search Cnosole를 적용하기 위해서는 로그인이 필요하다. 아래 링크로 이동하여 회원가입 및 로그인을 진행한다.
 
- * 사이트 주소 : <a href="https://analytics.google.com/analytics/web/provision/#/provision" target="_blank">https://analytics.google.com/analytics/web/provision/#/provision</a>
+ * 사이트 주소 : <a href="https://search.google.com/search-console/about" target="_blank">https://search.google.com/search-console/about</a>
 
- * 메인 페이지에서 "측정 시작" 버튼을 클릭한다.
  <br/>
- ![image-center](/assets/images/2021-03-12-google-analytics-main-site.png){: .align-center}
+![image-center](/assets/images/2021-03-22-google-search-console-starting.png){: .align-center}
+
+ * 설정 추가하여 아래 사진과 같이 "URL 접두어"에 자신의 블로그 URL을 넣는다.
+ <br/>
+ ![image-center](/assets/images/2021-03-22-google-search-console-insert-url.png){: .align-center}
 
 
-  * 계정 정보를 입력한 후 "다음"버튼을 클릭한다. 이 계정를 토대로 정보가 관리된다.
+  * 소유권 확인을 위해서 파일을 다운로드 받는다.
   <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-setting-account.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-console-auth-file-down.png){: .align-center}
 
-  * 속성 명을 입력한다.
+  * 다운로드 받은 파일을 루트에 위치 시킨다.
   <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-setting-attribute.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-console-save-file.png){: .align-center}
 
 
-  * 비지니스 정보를 입력한다. 개인 블로그로 이용할 예정이기 때문에 아래 사진과 같이 입력했다.
+  * 파일를 적용 시키고 소요권 확인 하면 아래와 같은 화면을 볼 수 있다.
   <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-setting-business.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-console-complete-auth.png){: .align-center}
 
-# 2. Google Analytics와 Github Page 연동하기
+# 1-2. Google Search Console sitemap.xml, robots.txt 파일 작성.
 
-  * 앞서 Google Analytics에 회원가입하고, 기본적인 설정을 했다. 이제는 Github Page와 연동하는 방법에 대해서 알아보겠다.
-
-  * 우선 관리자 페이지에서 속성에서 "데이터 스트림"을 선택한다.
-  <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-setting-datastream.png){: .align-center}
-
-  * 우리는 Github Page와 연결할거니까 "웹"을 선택한다.
-  <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-select-data-stream.png){: .align-center}
-
-  * 현재 Github Page 링크와 별명으로 사용할 이름을 입력한다.
-  <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-insert-website-url.png){: .align-center}
-
-  * 데이터 스트림을 만들면 아래와 같이 추적ID가 생성이 된다. 이를 복사해서 **_config.yml** 파일에 입력해준다.
-  <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-trace-id.png){: .align-center}
-
-  <br/>
+  * 이제 내 블로그에 대한 기본 설정이 끝났다. 이제 할 작업은 내가 블로그에 올린 포스팅을 검색 될 수 있게 Sitemap 작업 즉 색인을 생성해야 된다. 현재 내가 사용하고 있는 Jekyll 테마의 경우 기본적으로 _config.yml에 plugin으로 jekyll-sitemap과 jekyll-feed가 추가되어 있기 때문에 Sitemap 파일은 따로 필요 없다. 만약에 자신이 Plugin으로 추가되어 있는지 확인 하고 싶다면 아래와 같이 _config.yml에 설정되어 있는지 확인하고 **https://Im-wali.github.io/sitemap.xml** 링크와 같이 자신 루트 URL에서 뒤에 **sitemap.xml** 붙여 확인해 보면 된다.  
 
   ```ruby
-  # Analytics
-  analytics:
-    provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
-    google:
-      tracking_id          : "G-Q8XPW2ZMZ0"
-      anonymize_ip         : false # true, false (default)
+  # Plugins (previously gems:)
+  plugins:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
   ```
   <br/>
 
-
-  * 이제 설정이 완료되었다. 아래 처럼 블로그에 접근한 사람에 대한 정보를 볼 수 있다.
   <br/>
-  ![image-center](/assets/images/2021-03-12-google-analytics-complete.png){: .align-center}
+  ![image-center](/assets/images/2021-03-22-google-search-console-sitemap.png){: .align-center}
+
+  * sitemap.xml 파일 생성은 plugin으로 처리해도 **robots.txt** 파일을 작성해야 한다. 해당 파일에는 웹 크롤러가 내 사이트를 크롤링 시 크롤링할 정책에 대한 설정이 들어간다.
+  간단하게 아래와 같이 설정할 수 있다.
+
+  ```Text
+  User-agent: *
+  Allow: /
+  Sitemap: https://im-wali.github.io/sitemap.xml
+  ```
+  <br/>
+
+# 1-3. Google Search Console sitemap 제출
+
+  * sitemap.xml과 robots.txt를 설정했다면 Google Search Console에 제출한다.
+  우선 왼쪽 메뉴에서 **색인 > Sitemaps** 를 클릭한다. 아래와 같은 화면에 sitemap.xml 이라고 입력하고 제출한다.
+  <br/>
+  ![image-center](/assets/images/2021-02-26-disqus-complete-submit-simtemap.png){: .align-center}
+
+  * 정상적으로 Sitemap 제출이 되었다면 아래와 같이 **성공** 이라는 상태가 된다. 다만 색인의 경우 몇일 정도 걸릴 수 있다.
+
+  <br/>
+  ![image-center](/assets/images/2021-03-22-google-search-console-sucess-sitemap.png){: .align-center}
