@@ -8,6 +8,7 @@ tags:
   - Jekyll
   - 지킬
   - Google Search Console
+  - Naver Search Advisor
 ---
 <br/>
 # 검색 엔진에 노출하기
