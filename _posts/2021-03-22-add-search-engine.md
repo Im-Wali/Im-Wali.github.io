@@ -15,7 +15,7 @@ tags:
 
 # 1. Google Search Console
 
-  * Google Search Console은 구글의 전 구글 웹마스터들이 개발한 웹 서비스로서, 웹 마스터들이 자신들의 웹사이트의 보이는 부분을 최적화하고 인덱싱 상태를 검색할 수 있게 한다. [위키백과]
+  * Google Search Console은 구글의 구글 웹마스터들이 개발한 웹 서비스로서, 웹 마스터들이 자신들의 웹사이트의 보이는 부분을 최적화하고 인덱싱 상태를 검색할 수 있게 한다. **[위키백과]**
 
   * Google Search Console은 구글에서 제공하는 웹사이트 무료 툴로 구글에 등록한 자사의 웹사이트를 어떻게 인식하고 있는지 대한 정보를 제공한다. 예전에는 구글 웹 마스터 도구라는 명칭으로 사용하였지만, 현재는 Google Search Cnosole이라는 명칭으로 불리고 있다. 여기에 색인을 추가해야 우리가 힘들게 만든 블로그가 Google 검색 시 나타날 수 있다.
 
@@ -23,7 +23,7 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-03-22-google-search-console.png){: .align-center}
 
-# 1-1. Google Search Console 적용하기
+## 1-1. Google Search Console 적용하기
  * 우선 Google Search Cnosole를 적용하기 위해서는 로그인이 필요하다. 아래 링크로 이동하여 회원가입 및 로그인을 진행한다.
 
  * 사이트 주소 : <a href="https://search.google.com/search-console/about" target="_blank">https://search.google.com/search-console/about</a>
@@ -49,9 +49,9 @@ tags:
   <br/>
   ![image-center](/assets/images/2021-03-22-google-search-console-complete-auth.png){: .align-center}
 
-# 1-2. Google Search Console sitemap.xml, robots.txt 파일 작성.
+## 1-2. Google Search Console sitemap.xml, robots.txt 파일 작성.
 
-  * 이제 내 블로그에 대한 기본 설정이 끝났다. 이제 할 작업은 내가 블로그에 올린 포스팅을 검색 될 수 있게 Sitemap 작업 즉 색인을 생성해야 된다. 현재 내가 사용하고 있는 Jekyll 테마의 경우 기본적으로 _config.yml에 plugin으로 jekyll-sitemap과 jekyll-feed가 추가되어 있기 때문에 Sitemap 파일은 따로 필요 없다. 만약에 자신이 Plugin으로 추가되어 있는지 확인 하고 싶다면 아래와 같이 _config.yml에 설정되어 있는지 확인하고 **https://Im-wali.github.io/sitemap.xml** 링크와 같이 자신 루트 URL에서 뒤에 **sitemap.xml** 붙여 확인해 보면 된다.  
+  * 이제 내 블로그에 대한 기본 설정이 끝났다. 이제 할 작업은 내가 블로그에 올린 포스팅을 검색 될 수 있게 Sitemap 작업, 즉 색인을 생성해야 된다. 현재 내가 사용하고 있는 Jekyll 테마의 경우 기본적으로 _config.yml에 plugin으로 jekyll-sitemap과 jekyll-feed가 추가되어 있기 때문에 Sitemap 파일은 따로 필요 없다. 만약에 자신이 Plugin으로 추가되어 있는지 확인 하고 싶다면 아래와 같이 _config.yml에 설정되어 있는지 확인하고 **https://Im-wali.github.io/sitemap.xml** 링크와 같이 자신 루트 URL에서 뒤에 **sitemap.xml** 붙여 확인해 보면 된다.  
 
   ```ruby
   # Plugins (previously gems:)
@@ -63,21 +63,19 @@ tags:
     - jekyll-include-cache
   ```
   <br/>
-
-  <br/>
   ![image-center](/assets/images/2021-03-22-google-search-console-sitemap.png){: .align-center}
 
   * sitemap.xml 파일 생성은 plugin으로 처리해도 **robots.txt** 파일을 작성해야 한다. 해당 파일에는 웹 크롤러가 내 사이트를 크롤링 시 크롤링할 정책에 대한 설정이 들어간다.
   간단하게 아래와 같이 설정할 수 있다.
 
-  ```Text
+  ```
   User-agent: *
   Allow: /
   Sitemap: https://im-wali.github.io/sitemap.xml
   ```
   <br/>
 
-# 1-3. Google Search Console sitemap 제출
+## 1-3. Google Search Console sitemap 제출
 
   * sitemap.xml과 robots.txt를 설정했다면 Google Search Console에 제출한다.
   우선 왼쪽 메뉴에서 **색인 > Sitemaps** 를 클릭한다. 아래와 같은 화면에 sitemap.xml 이라고 입력하고 제출한다.
@@ -96,10 +94,10 @@ tags:
 # 2. Naver
   * Github Page로 블로그를 만드는 경우 제일 많은 유입 경로가 Google일 것이다. 하지만 국내에서 제일 많이 쓰는 포털이 Naver를 버리기에는 아쉬움이 많다. 그래서 Naver Search Advisor(웹마스터 도구)를 통해 Naver 검색 내 블로그가 검색될 수 있게 해보겠다.
 
-# 2-1. Naver Search Advisor(웹마스터 도구)
+## 2-1. Naver Search Advisor(웹마스터 도구)
   * Naver Search Advisor는 운영하고 있는 사이트의 검색을 위한 색인 및 검색 반영 현황을 모니터링하고 관리 가능하도록 하는 Naver에서 제공하는 도구 이다.
 
-# 2-1. Naver Search Advisor  웹
+## 2-1. Naver Search Advisor  웹
   * Naver Search Advisor를 사용하기 위해서는 아래 URL를 통해 우선 사이트를 이동하여 로그인 해야 된다. 로그인 한 후 우측 상단의 "웹마스터 도구"를 클릭한다.
 
   * 사이트 주소 : <a href="https://searchadvisor.naver.com/" target="_blank">https://searchadvisor.naver.com/</a>
@@ -148,4 +146,4 @@ tags:
   ![image-center](/assets/images/2021-03-22-daum-insert-searchurl.png){: .align-center}
 
 # 4. 끝마치며
-  * 이것으로 각종 포털 사이트에서 내가 만든 블로그를 검색할 수 있게 되었다. 블로그 지속적으로 운영하면서 계속 수정을 하겠지만, 지금까지 올려놓은 Github Page 블로그 관련 포스팅으로 기본적인 설정들은 다 할 수 있을것이다. 이 다음 포스팅 부터는 기술적인 관련된 내용을 정리하여 포스팅할 예정이다. 
+  * 이것으로 각종 포털 사이트에서 내가 만든 블로그를 검색할 수 있게 되었다. 블로그 지속적으로 운영하면서 계속 수정을 하겠지만, 지금까지 올려놓은 Github Page 블로그 관련 포스팅으로 기본적인 설정들은 다 할 수 있을것이다. 이 다음 포스팅 부터는 기술적인 관련된 내용을 정리하여 포스팅할 예정이다.
