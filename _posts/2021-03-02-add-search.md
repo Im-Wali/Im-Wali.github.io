@@ -109,7 +109,7 @@ tags:
   * 우선 아래 링크를 통해 사이트로 이동하여 회원 가입을 진행한다. github의 Repository에 접근해야 되기 때문에 Github 아이디로 회원 가입한다.
 
   <br/>
-  * 사이트 주소 : <a href="https://travis-ci.org/" target="_blank">https://travis-ci.org/</a>
+  * 사이트 주소 : <a href="https://travis-ci.com/" target="_blank">https://travis-ci.com/</a>
 
   <br/>
   ![image-center](/assets/images/2021-03-01-travis-ci-main.png){: .align-center}
