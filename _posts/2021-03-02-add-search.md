@@ -24,7 +24,7 @@ tags:
 ## 1-1. 회원가입하기
   * 우선 제일 먼저 할일은 역시나 회원가입이다. 아래 링크로 통해 사이트를 이동하여 우측 상단의 "Start Free"를 클릭하고 다음 페이지에서 "Sign up with Github"를 클릭하여 회원가입을 한다.
   <br/>
-  * 사이트 주소 : <a href="https://disqus.com/" target="_blank">https://disqus.com/</a>
+  * 사이트 주소 : <a href="https://www.algolia.com/" target="_blank">https://www.algolia.com/</a>
   <br/>
   ![image-center](/assets/images/2021-03-01-algolia-site-start-free.png){: .align-center}
   <br/>
