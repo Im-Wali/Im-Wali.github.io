@@ -4,11 +4,11 @@ search: false
 categories:
   - GithubPage
 tags:
-  - Gihub Page
-  - Jekyll
-  - 지킬
-  - Google Search Console
-  - Naver Search Advisor
+  - Data
+  - Data Modeling
+  - Modeling
+  - 관계형 데이터 모델링 노트
+  - 데이터 모델링
 ---
 <br/>
 # 서론
