@@ -20,7 +20,7 @@ tags:
   <br/>
   <br/>
   <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791196319212" target="_blank">
-    ![image-center](/assets/images/20210401_modeling_note.jpg){: .align-center width="250"  height="250"}
+    ![image-center](/assets/images/20210401_modeling_note.jpg){: .align-center width="300"}
   </a>
   <br/>
   <a href="https://cafe.naver.com/iamda" target="_blank">
