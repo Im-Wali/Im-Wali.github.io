@@ -21,6 +21,7 @@ tags:
 
   <br/>
   ![image-center](/assets/images/2021-04-11_normalization.png){: .align-center}
+
   [출처 : https://velog.io/@bsjp400]
 
 # Chapter 2 : 정규화 이야기
@@ -181,7 +182,9 @@ tags:
     <br/>
 
 ## 정규화 요약
-    ![image-center](/assets/images/2021-04-11_normalization_summary.jpg){: .align-center}
+  * 아래 표를 통해서 정규화에 대한 요약을 정보를 볼수 있다.
+  <br/>
+  ![image-center](/assets/images/2021-04-11_normalization_summary.jpg){: .align-center}
 
 ## 정규형와 성능
   * 정규형의 단점이 오직 성능 저하에만 있는 것은 아니다. 간혹 정규형을 이해 못해서 데이터를 엉뚱하게 다루는 경우도 있다.
