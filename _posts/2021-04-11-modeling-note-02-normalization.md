@@ -77,6 +77,7 @@ tags:
   * **1) 완전성**
     - 정규화의 가장 커다란 목적 중의 하나는 중복 데이터를 제거하는 것이다. 중복 데이터를 사용하지 않으면 불완전한 데이터를 발생시키는 아노말리(이상)가 생기지 않아 데이터 무결성과 데이터 품질이 좋아진다.
     <br/>
+    <br/>
 
   * **2) 확장성**
     - 정규화를 하면 모델의 확장성이 좋아진다. 정규화를 통해 비 식별자 속성을 주 식별자에 종속시키면 데이터가 명확해진다. 데이터 정체성이 그대로 반영된 모델 구조에서는 업무가 수정되거나, 추가되어도 엔티티에 반영하기 수월해진다.
@@ -163,10 +164,10 @@ tags:
     ![image-center](/assets/images/2021-04-11_04_normalization_01.jpg){: .align-center}
     <br/>
 
-    ![image-center](/assets/images/2021-04-11_04_normalization_02.jpg){: .align-center}
+    ![image-center](/assets/images/2021-04-11_04_normalization_03.jpg){: .align-center}
     <br/>
 
-    ![image-center](/assets/images/2021-04-11_04_normalization_03.jpg){: .align-center}
+    ![image-center](/assets/images/2021-04-11_04_normalization_02.jpg){: .align-center}
     <br/>
 
   * **6) 제 5 정규형**
