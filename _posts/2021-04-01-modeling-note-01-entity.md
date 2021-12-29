@@ -13,6 +13,8 @@ tags:
   - 엔티티
 ---
 <br/>
+# Chapter 1 : 엔티티 이야기
+
 # 서론
   * 해당 포스팅은 아래 서책을 기준으로 이론 스터디를 진행한 부분을 정리한 포스팅이다. 책의 내용을 인용하여 내 생각을 정리해 보았다.
 
@@ -28,9 +30,6 @@ tags:
   <a href="https://cafe.naver.com/iamda" target="_blank">
     ![image-center](/assets/images/20210401_cafe_main.png){: .align-center}
   </a>
-
-
-# Chapter 1 : 엔티티 이야기
 
 ## 집합과 엔티티
 

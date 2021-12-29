@@ -13,7 +13,9 @@ tags:
   - Normalization
 ---
 <br/>
-# 서론
+# Chapter 2 : 정규화 이야기
+
+## 서론
   * "관계형 데이터 모델링 노트" 책을 통해 진행한 이론 스터디 두번째 시간이다. 모델링을 진행하면서 제일 중요한게 엔티티를 정의하는것이다. 엔티티라는 것은 "어떤것"을 얘기하는데 이때 어떤 것이란, 사람또는 사물같이 유형적인 것 뿐만 아니라 개념같은 무형적인 것도 포함이 된다.
   <br/>
   <br/>
@@ -27,8 +29,6 @@ tags:
   ![image-center](/assets/images/2021-04-11_normalization.png){: .align-center}
 
   [출처 : https://velog.io/@bsjp400]
-
-# Chapter 2 : 정규화 이야기
 
 ## 정규화에 대한 서설
 
