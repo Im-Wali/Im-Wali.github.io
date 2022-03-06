@@ -80,6 +80,7 @@ tags:
       - 데이터도 변경 값만 관리하는 방법과 중복 데이터로 관리하는 방법이 있다. 중복 데이터를 사용하는 방법은 원천 데이터와 이력 데이터를 동시에 조회하는 요건이 많은 경우 사용하는 방법이다. 중복 데이터를 사용하는 방법은 비정규화의 일종이다.
       <br/>
       ![image-center](/assets/images/2021-05-14_altered-03.jpg){: .align-center}
+      <br/>
       ![image-center](/assets/images/2021-05-14_altered-04.jpg){: .align-center}
       <br/>
 
@@ -123,6 +124,7 @@ tags:
       - 원천 데이터를 관리하는 엔티티에 이력 데이터를 혼합하여 관리하는 기본적인 모델은 아래와 같다.
       <br/>
       ![image-center](/assets/images/2021-05-14_altered-10.jpg){: .align-center}
+      <br/>
       ![image-center](/assets/images/2021-05-14_altered-11.jpg){: .align-center}
       <br/>
 
@@ -130,6 +132,7 @@ tags:
       - 기준 엔티티는 결과적으로 이 방법을 사용해서 이력 데이터를 설계하는 경우가 많다. 변경되기 전의 환율을 관리해야 할 때, 변경 데이터를 하나의 엔티티에서 관리한다면 아래와 같이 설계 가능하다.
       <br/>
       ![image-center](/assets/images/2021-05-14_altered-12.jpg){: .align-center}
+      <br/>
       ![image-center](/assets/images/2021-05-14_altered-13.jpg){: .align-center}
       <br/>
 
@@ -159,6 +162,7 @@ tags:
 
     <br/>
     ![image-center](/assets/images/2021-05-14_altered-16.jpg){: .align-center}
+    <br/>
     ![image-center](/assets/images/2021-05-14_altered-17.jpg){: .align-center}
 
 ## 이력 데이터를 설계하는 세번째 방법
@@ -172,12 +176,15 @@ tags:
 
   <br/>
   ![image-center](/assets/images/2021-05-14_altered-18.jpg){: .align-center}
+  <br/>
   ![image-center](/assets/images/2021-05-14_altered-19.jpg){: .align-center}
 
 ## 이력 데이터를 종 테이블로 설계하는 다양한 방법
   <br/>
   ![image-center](/assets/images/2021-05-14_altered-20.jpg){: .align-center}
+  <br/>
   ![image-center](/assets/images/2021-05-14_altered-21.jpg){: .align-center}
+  <br/>
   ![image-center](/assets/images/2021-05-14_altered-22.jpg){: .align-center}
 
 
@@ -226,4 +233,5 @@ tags:
   * 또는 이와 같이 이력 데이터와 동시에 관리 가능하다.
   <br/>
   ![image-center](/assets/images/2021-05-14_altered-28.jpg){: .align-center}
+  <br/>
   ![image-center](/assets/images/2021-05-14_altered-29.jpg){: .align-center}
