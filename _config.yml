@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : #site tagline that appears below site title in masthead
 name                     : "Im-Wali"
 description              : "빠르지 않지만 멈추지 않고 꾸준하게...."
-url                      : "https://im-wali.github.io/"
+url                      : "https://im-wali.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Im-Wali/Im-Wali.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 comments:
