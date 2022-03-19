@@ -2,7 +2,7 @@
 title:  "관계형 데이터 모델링 노트 : 03 데이터 통합과 서브 타입"
 search: false
 categories:
-  - Data Modeling
+  - DataModeling
 tags:
   - Data
   - Data Modeling

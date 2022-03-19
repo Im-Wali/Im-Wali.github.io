@@ -2,7 +2,7 @@
 title:  "관계형 데이터 모델링 노트 : 05 관계 이야기"
 search: false
 categories:
-  - Data Modeling
+  - DataModeling
 tags:
   - Data
   - Data Modeling
