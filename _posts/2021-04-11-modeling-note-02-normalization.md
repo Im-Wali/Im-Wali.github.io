@@ -11,6 +11,7 @@ tags:
   - 데이터 모델링
   - 정규화
   - Normalization
+  - 모델링
 ---
 <br/>
 # Chapter 2 : 정규화 이야기

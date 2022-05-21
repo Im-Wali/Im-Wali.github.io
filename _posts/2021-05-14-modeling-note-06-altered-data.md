@@ -12,6 +12,7 @@ tags:
   - 이력
   - 이력 데이터
   - altered data
+  - 모델링
 ---
 <br/>
 # Chapter 6 : 이력 데이터 이야기
