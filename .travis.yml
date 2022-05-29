@@ -4,7 +4,7 @@ gemfile: Gemfile
 before_install:
   - gem install bundler
 script:
-  - bundle exec jekyll algolia --config _config.yml
+  - ALGOLIA_API_KEY=a6fa22769e12c16f932b236a1c74ac8d bundle exec jekyll algolia --config _config.yml
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
