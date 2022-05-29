@@ -62,7 +62,7 @@ search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : F9LN0PMH2A # YOUR_APPLICATION_ID
   index_name             : index_im-wali # YOUR_INDEX_NAME
-  search_only_api_key    : 1374f6deeb906ac483971de1127c043b # YOUR_SEARCH_ONLY_API_KEY
+  search_only_api_key    : a6fa22769e12c16f932b236a1c74ac8d # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
