@@ -1,5 +1,5 @@
 ---
-title:  "관계형 데이터 모델링 노트 : 04 속성 이야기"
+title:  "관계형 데이터 모델링 노트 04. 속성 이야기"
 search: false
 categories:
   - DataModeling
