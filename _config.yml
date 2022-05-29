@@ -61,7 +61,7 @@ search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : F9LN0PMH2A # YOUR_APPLICATION_ID
-  index_name             : im-wali # YOUR_INDEX_NAME
+  index_name             : index_im-wali # YOUR_INDEX_NAME
   search_only_api_key    : 1374f6deeb906ac483971de1127c043b # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
