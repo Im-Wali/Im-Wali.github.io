@@ -60,9 +60,9 @@ search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
-  application_id         : 3C7RFU232A # YOUR_APPLICATION_ID
+  application_id         : F9LN0PMH2A # YOUR_APPLICATION_ID
   index_name             : im-wali # YOUR_INDEX_NAME
-  search_only_api_key    : 0fff8e17c6e870325d3ab9ce32b9e449 # YOUR_SEARCH_ONLY_API_KEY
+  search_only_api_key    : 4a0e8c500793eb3569fc6234e4963728 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
