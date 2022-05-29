@@ -1,5 +1,5 @@
 ---
-title:  "관계형 데이터 모델링 노트 06. 이력 데이터 이야기"
+title:  "관계형 데이터 모델링 노트 : 06 이력 데이터 이야기"
 search: false
 categories:
   - DataModeling
