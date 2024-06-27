@@ -34,7 +34,7 @@ tags:
   * Text-to-SQL 수행 순서를 통해서 Text-to-SQL을 설명하고자 한다. 우선 Tex-to-SQL은 아래 사진과 같은 순서로 수행된다. 
   <br/>
 
-  * **Postgrel SQL Architecture**
+  * **Text-to-SQL 수행순서**
    ![image-center](/assets/images/2024-06-17-Text-to-SQL-02.jpg){: .align-center width="80%" height="80%"}
   <div style="text-align: right"> [논문 : sLLM 기반의 경량화 Text-to-SQL 구현 방안] </div>
   <br/>
