@@ -40,9 +40,11 @@ tags:
   ![image-center](/assets/images/2024-07-08-ML_BASIC_02.jpg){: .align-center width="100%" height="100%"}
   <div style="text-align: right"> [참고: https://wendys.tistory.com/169] </div>
   <br/>
+
 ### 2) 분석 유형에 따른 분류
   * **선형 회귀**
     - 선형 회귀는 독립 변수와 종속 변수 사이 관계가 선형적으로 표현하는 회귀 유형이다. 해당 문제를 대표하는 직선을 찾는것이다. 이를 수식으로 나타내면 아래와 같다.
+
     \[ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n + \epsilon \]
 
     - \( y \)는 종속 변수 
@@ -50,10 +52,12 @@ tags:
     - \( \beta_0 \)는 절편 (intercept)
     - \( \beta_1, \beta_2, \ldots, \beta_n \)는 기울기
     - \( \epsilon \)은 오차 항 (error term)
+
   <br/>
 
   * **다항 회귀**
     - 독립 변수와 종속 변수 사이 관계를 비선형적으로 표현하는 회귀 유형이다. 이를 수기으로 나타내면 아래와 같다.
+
     \[ y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3 + \cdots + \beta_k x^k + \epsilon \]
 
     - \( y \)는 종속 변수.
@@ -61,6 +65,7 @@ tags:
     - \( \beta_0, \beta_1, \beta_2, \ldots, \beta_k \)는 회귀 계수.
     - \( k \)는 다항식의 차수(degree).
     - \( \epsilon \)은 오차 항.
+    
   <br/>
 
 
