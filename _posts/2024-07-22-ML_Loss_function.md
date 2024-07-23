@@ -123,85 +123,86 @@ tags:
   * 경사 하강법을 개선한 최적화 알고리즘으로 현재 학습 단게에서 이전의 학습 방향을 고려한 방법이다. 다시 설명하면 이전 기울기 크기를 고려하여 추가로 이동한다. 이러한 물리적인 관성 개념을 차용한 방법이다. 이러한 방법을 사용하면 Local Minimum에 빠질 가능성이 적어진다. 
   <br/>
 
-  ![image-center](/assets/images/2024-07-22-ML_Loss_function-04.jpg){: .align-center width="100%" height="100%"}
-  <div style="text-align: right"> [참고: https://meme2515.github.io/neural_network/optimizer/] </div>
-  <br/>
+    ![image-center](/assets/images/2024-07-22-ML_Loss_function-04.jpg){: .align-center width="100%" height="100%"}
+    <div style="text-align: right"> [참고: https://meme2515.github.io/neural_network/optimizer/] </div>
+    <br/>
 
-  $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta$$
-  <br/>  
-  - $ v_t $는 현재 속도
-  - $ \gamma $는 모멘텀 계수로, 이전 속도의 영향을 결정(보통 0.9로 설정)
-  - $ \eta $는 학습률(learning rate)
-  - $ \nabla_\theta J(\theta) $는 현재 기울기
-  <br/>  
+    $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta$$
+    <br/>
+        
+    - $ v_t $는 현재 속도
+    - $ \gamma $는 모멘텀 계수로, 이전 속도의 영향을 결정(보통 0.9로 설정)
+    - $ \eta $는 학습률(learning rate)
+    - $ \nabla_\theta J(\theta) $는 현재 기울기
+    <br/>  
 
 ### 4) AdaGrad (Adaptive gradient)
   * Adaptive Gradient 줄임말로 매개 변수 마다 개별적으로 학습률을 조정하는 최적화 알고리즘이다. 기울기를 빈도에 따라서 학습률을 적응적으로 조정한다. 자주 업데이터 되는 매게변수의 학습률을 다운시키고 드물게 업데이트 되는 매개변수 학습률을 업 시킨다.
   <br/>  
 
-  * **축적된 기울기 제곱합 (Accumulated Gradient Squared Sum)**
-  $$G_t = G_{t-1} + (\nabla_\theta J(\theta))^2$$
+    * **축적된 기울기 제곱합 (Accumulated Gradient Squared Sum)**
+    $$G_t = G_{t-1} + (\nabla_\theta J(\theta))^2$$
 
-  - $ G_t $는 시간 $ t $에서의 기울기의 제곱합.
-  - $ \nabla_\theta J(\theta) $는 현재 기울기.
-  <br/>
+    - $ G_t $는 시간 $ t $에서의 기울기의 제곱합.
+    - $ \nabla_\theta J(\theta) $는 현재 기울기.
+    <br/>
 
-  * **파라미터 업데이트 (Parameter Update)**
-  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{G_t} + \epsilon} \nabla_\theta J(\theta$$
-  <br/>  
-  - $ \theta $는 모델 파라미터.
-  - $ \eta $는 초기 학습률.
-  - $ \sqrt{G_t} $는 기울기의 제곱합의 제곱근.
-  - $ \epsilon $은 수치 안정성을 위한 작은 값입니다 (보통 $10^{-8}$).
-  <br/>  
+    * **파라미터 업데이트 (Parameter Update)**
+    $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{G_t} + \epsilon} \nabla_\theta J(\theta$$
+    <br/>  
+    - $ \theta $는 모델 파라미터.
+    - $ \eta $는 초기 학습률.
+    - $ \sqrt{G_t} $는 기울기의 제곱합의 제곱근.
+    - $ \epsilon $은 수치 안정성을 위한 작은 값입니다 (보통 $10^{-8}$).
+    <br/>  
 
 ### 5) RMSprop (Root Mean Square propagation) 
   * AdaGrad의 단점을 보완한 방법으로 이전 Step의 기울기를 단순히 같은 비율로 누적 하지 않고 지수이동평균(Exponential Moving Average)을 사용하여 기울기를 업데이트 한다. 결국에는 AdaGrad와 비슷하지만 최근 기울기는 자주 반영하고 오래된 기울기는 조금만 반영한다. 
   <br/>  
 
 
-  * **지수 이동 평균 (Exponential Moving Average)**
-  <br/>  
-  $$E[g^2]_t = \beta E[g^2]_{t-1} + (1 - \beta) (\nabla_\theta J(\theta))^2$$
-  <br/>  
+    * **지수 이동 평균 (Exponential Moving Average)**
+    <br/>  
+    $$E[g^2]_t = \beta E[g^2]_{t-1} + (1 - \beta) (\nabla_\theta J(\theta))^2$$
+    <br/>  
 
 
-  - $ E[g^2]_t $는 시간 $ t $에서의 기울기 제곱의 지수 이동 평균.
-  - $ \beta $는 지수 이동 평균의 감쇠율(보통 0.9로 설정).
-  - $ \nabla_\theta J(\theta) $는 현재 기울기.
-  <br/>  
+    - $ E[g^2]_t $는 시간 $ t $에서의 기울기 제곱의 지수 이동 평균.
+    - $ \beta $는 지수 이동 평균의 감쇠율(보통 0.9로 설정).
+    - $ \nabla_\theta J(\theta) $는 현재 기울기.
+    <br/>  
 
 
-  * **파라미터 업데이트 (Parameter Update)**
-  <br/>  
-  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{E[g^2]_t} + \epsilon} \nabla_\theta J(\theta$$
-  <br/>  
+    * **파라미터 업데이트 (Parameter Update)**
+    <br/>  
+    $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{E[g^2]_t} + \epsilon} \nabla_\theta J(\theta$$
+    <br/>  
 
-  - $ \theta $는 모델 파라미터.
-  - $ \eta $는 초기 학습률.
-  - $ \sqrt{E[g^2]_t} $는 기울기 제곱의 지수 이동 평균의 제곱근.
+    - $ \theta $는 모델 파라미터.
+    - $ \eta $는 초기 학습률.
+    - $ \sqrt{E[g^2]_t} $는 기울기 제곱의 지수 이동 평균의 제곱근.
 
 
 ### 6) Adam(Adaptive Moment Estimation) 
   * Momentum과 RMSprop를 결합한 형태의 최적화 알고리즘으로써, 대중적으로 제일 많이 사용하는 최적화 알고리즘이다. Adam은 기울기의 1차 및 2차 모멘트를 추정하여, 학습률을 적응적으로 조정한다. 이는 기울기의 평균과 분산을 모두 고려하여, 각 파라미터에 대한 학습률을 조정함으로써 다양한 기울기 스케일을 효과적으로 처리할 수 있다.
   <br/>  
-  $$
-  \begin{aligned}
-  & \text{1차 모멘트 추정:} \quad m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla_\theta J(\theta) \\
-  & \text{2차 모멘트 추정:} \quad v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla_\theta J(\theta))^2 \\
-  & \text{1차 모멘트 바이어스 수정:} \quad \hat{m}_t = \frac{m_t}{1 - \beta_1^t} \\
-  & \text{2차 모멘트 바이어스 수정:} \quad \hat{v}_t = \frac{v_t}{1 - \beta_2^t} \\
-  & \text{파라미터 업데이트:} \quad \theta \leftarrow \theta - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t
-  \end{aligned}
-  $$
-  <br/>  
-  - $ m_t $는 시간 $ t $에서의 1차 모멘트 추정치.
-  - $ v_t $는 시간 $ t $에서의 2차 모멘트 추정치.
-  - $ \beta_1 $는 1차 모멘트 추정의 감쇠율(보통 0.9로 설정).
-  - $ \beta_2 $는 2차 모멘트 추정의 감쇠율(보통 0.999로 설정).
-  - $ \nabla_\theta J(\theta) $는 현재 기울기.
-  - $ \theta $는 모델 파라미터.
-  - $ \eta $는 학습률.
+    $$
+    \begin{aligned}
+    & \text{1차 모멘트 추정:} \quad m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla_\theta J(\theta) \\
+    & \text{2차 모멘트 추정:} \quad v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla_\theta J(\theta))^2 \\
+    & \text{1차 모멘트 바이어스 수정:} \quad \hat{m}_t = \frac{m_t}{1 - \beta_1^t} \\
+    & \text{2차 모멘트 바이어스 수정:} \quad \hat{v}_t = \frac{v_t}{1 - \beta_2^t} \\
+    & \text{파라미터 업데이트:} \quad \theta \leftarrow \theta - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t
+    \end{aligned}
+    $$
+    <br/>  
+    - $ m_t $는 시간 $ t $에서의 1차 모멘트 추정치.
+    - $ v_t $는 시간 $ t $에서의 2차 모멘트 추정치.
+    - $ \beta_1 $는 1차 모멘트 추정의 감쇠율(보통 0.9로 설정).
+    - $ \beta_2 $는 2차 모멘트 추정의 감쇠율(보통 0.999로 설정).
+    - $ \nabla_\theta J(\theta) $는 현재 기울기.
+    - $ \theta $는 모델 파라미터.
+    - $ \eta $는 학습률.
 
 ## 03. 끝마치며
   * 이번 포스팅에서는 손실함수와 최적화 알고리즘에 대해서 알아 보았다. 대표적으로 몇개 알아 보았지만, 포스팅에서 얘기한거 이외에도 많은 손실함수와 최적화 알고리즘이 있다.
