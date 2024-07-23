@@ -1,5 +1,5 @@
 ---
-title:  "[ML] : 03. 손실함수"
+title:  "[ML] : 03. 손실함수 & 최적화 알고리즘"
 search: false
 categories:
   - AI
