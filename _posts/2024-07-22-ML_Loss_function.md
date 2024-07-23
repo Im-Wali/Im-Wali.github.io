@@ -29,9 +29,9 @@ tags:
 
     $$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
 
-    - $( n )$은 데이터 차수
-    - $( y_i )$는 실제 값
-    - $( \hat{y}_i )$는 예측 값
+    - $ n $은 데이터 차수
+    - $ y_i $는 실제 값
+    - $ \hat{y}_i $는 예측 값
     <br/>
 
 ### 3) RMSE(Root Mean Squared Error) : 평균 제곱근 오차
@@ -39,9 +39,9 @@ tags:
 
     $$RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
 
-    - $( n )$은 데이터 차수
-    - $( y_i )$는 실제 값
-    - $( \hat{y}_i )$는 예측 값
+    - $ n $은 데이터 차수
+    - $ y_i $는 실제 값
+    - $ \hat{y}_i $는 예측 값
 
     <br/>
 
@@ -50,44 +50,44 @@ tags:
 
     $$BCE = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]$$
 
-    - $( n )$은 데이터 차수
-    - $( y_i )$는 실제 값
-    - $( \hat{y}_i )$는 예측 확률
+    - $ n $은 데이터 차수
+    - $ y_i $는 실제 값
+    - $ \hat{y}_i $는 예측 확률
      <br/>
 
 ### 5) Categorical Crossentropy : 카테고리컬 교차 엔트로피
   * 다중 클래스 분류 문제를 위한 손실 함수로써 각 클래스에 대한 예측 결과와 실제 결과 사이의 오차를 측정한다.
 
-    $$CCE = -\sum_{i=1}^{n} \sum_{c=1}^{C} y_{ic} \log(\hat{y}_{ic})$$
+    $$CCE = -\sum_{i=1}^{n} \sum_{c=1}^{C} y_{ic} \log(\hat{y}_{ic}$$
 
-    - $( n )$은 데이터 차수
-    - $( C )$는 클래스의 수
-    - $( y_{ic} )$는 데이터 포인트 $( i )$의 실제 클래스에 대한 원-핫 인코딩된 벡터
-    - $( \hat{y}_{ic} )$는 데이터 포인트 $( i )$에 대한 예측 클래스 확률
+    - $ n $은 데이터 차수
+    - $ C $는 클래스의 수
+    - $ y_{ic} $는 데이터 포인트 $ i $의 실제 클래스에 대한 원-핫 인코딩된 벡터
+    - $ \hat{y}_{ic} $는 데이터 포인트 $ i $에 대한 예측 클래스 확률
      <br/>
 
 
 ### 6) Sparse Categorical Crossentropy : 정수 카테고리컬 교차 엔트로피
   * Sparse Categorical Crossentropy는 Categorical Crossentropy의 변형으로, 레이블을 원-핫 인코딩 형식이 아니라 단일 정수 형태로 제공할 때 사용된다. 라벨이 (1,2,3,4) 와 같이 정수 형태일때 사용한다. 
 
-    $$SCCE = -\sum_{i=1}^{n} \log(\hat{y}_{i, y_i})$$
+    $$SCCE = -\sum_{i=1}^{n} \log(\hat{y}_{i, y_i}$$
 
 
-    - $( n )$은 데이터 포인트 차수
-    - $( y_i )$는 데이터 포인트 $( i )$의 실제 클래스 레이블(정수 인덱스)
-    - $( \hat{y}_{i, y_i} )$는 데이터 포인트 $( i )$에 대한 예측 클래스 확률 중 실제 클래스 $( y_i )$에 해당하는 확률
+    - $ n $은 데이터 포인트 차수
+    - $ y_i $는 데이터 포인트 $ i $의 실제 클래스 레이블(정수 인덱스)
+    - $ \hat{y}_{i, y_i} $는 데이터 포인트 $ i $에 대한 예측 클래스 확률 중 실제 클래스 $ y_i $에 해당하는 확률
 
-    - $( y )$는 종속 변수 
+    - $ y $는 종속 변수 
      <br/>
 
 ### 7) Focal Loss
   * 페이스북에서 발표한 손실함수로써 Retina Net 모델을 학습 시키는데 사용되며, 객체 탐지 문제에서 클래스 균형을 다루기 위해서 제안되었다. Corss Entropy Loss에 가중치를 부여하여 잘못 분류된 예제에 더 집중한다. 
 
-    $$\text{FL}(p_t) = -\alpha_t (1 - p_t)^\gamma \log(p_t)$$
+    $$\text{FL}(p_t) = -\alpha_t (1 - p_t)^\gamma \log(p_t$$
 
-    - $( p_t )$는 모델의 예측 확률. 구체적으로, $( p_t )$는 정답 클래스에 대한 모델의 예측 확률
-    - $( \alpha_t )$는 클래스의 불균형을 조정하는 가중치이다. 이는 클래스별로 다를 수 있으며, 일반적으로 $( \alpha_t )$는 스칼라 값
-    - $( \gamma )$는 조정 파라미터로, 샘플의 어려움에 따라 손실의 비율을 조정합니다. $(\gamma)$의 값이 클수록 쉬운 샘플에 대한 손실 기여가 줄어든다.
+    - $ p_t $는 모델의 예측 확률. 구체적으로, $ p_t $는 정답 클래스에 대한 모델의 예측 확률
+    - $ \alpha_t $는 클래스의 불균형을 조정하는 가중치이다. 이는 클래스별로 다를 수 있으며, 일반적으로 $ \alpha_t $는 스칼라 값
+    - $ \gamma $는 조정 파라미터로, 샘플의 어려움에 따라 손실의 비율을 조정합니다. $\gamma$의 값이 클수록 쉬운 샘플에 대한 손실 기여가 줄어든다.
 
      <br/>
 
@@ -127,11 +127,11 @@ tags:
   <div style="text-align: right"> [참고: https://meme2515.github.io/neural_network/optimizer/] </div>
   <br/>
 
-  $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta)$$
-  - $( v_t )$는 현재 속도
-  - $( \gamma )$는 모멘텀 계수로, 이전 속도의 영향을 결정(보통 0.9로 설정)
-  - $( \eta )$는 학습률(learning rate)
-  - $( \nabla_\theta J(\theta) )$는 현재 기울기
+  $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta$$
+  - $ v_t $는 현재 속도
+  - $ \gamma $는 모멘텀 계수로, 이전 속도의 영향을 결정(보통 0.9로 설정)
+  - $ \eta $는 학습률(learning rate)
+  - $ \nabla_\theta J(\theta) $는 현재 기울기
 
 ### 4) AdaGrad (Adaptive gradient)
   * Adaptive Gradient 줄임말로 매개 변수 마다 개별적으로 학습률을 조정하는 최적화 알고리즘이다. 기울기를 빈도에 따라서 학습률을 적응적으로 조정한다. 자주 업데이터 되는 매게변수의 학습률을 다운시키고 드물게 업데이트 되는 매개변수 학습률을 업 시킨다.
@@ -140,17 +140,17 @@ tags:
   * **축적된 기울기 제곱합 (Accumulated Gradient Squared Sum)**
   $$G_t = G_{t-1} + (\nabla_\theta J(\theta))^2$$
 
-  - $( G_t )$는 시간 $( t )$에서의 기울기의 제곱합.
-  - $( \nabla_\theta J(\theta) )$는 현재 기울기.
+  - $ G_t $는 시간 $ t $에서의 기울기의 제곱합.
+  - $ \nabla_\theta J(\theta) $는 현재 기울기.
   <br/>
 
   * **파라미터 업데이트 (Parameter Update)**
-  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{G_t} + \epsilon} \nabla_\theta J(\theta)$$
+  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{G_t} + \epsilon} \nabla_\theta J(\theta$$
 
-  - $( \theta )$는 모델 파라미터.
-  - $( \eta )$는 초기 학습률.
-  - $( \sqrt{G_t} )$는 기울기의 제곱합의 제곱근.
-  - $( \epsilon )$은 수치 안정성을 위한 작은 값입니다 (보통 $(10^{-8})$).
+  - $ \theta $는 모델 파라미터.
+  - $ \eta $는 초기 학습률.
+  - $ \sqrt{G_t} $는 기울기의 제곱합의 제곱근.
+  - $ \epsilon $은 수치 안정성을 위한 작은 값입니다 (보통 $10^{-8}$).
 
 ### 5) RMSprop (Root Mean Square propagation) 
   * AdaGrad의 단점을 보완한 방법으로 이전 Step의 기울기를 단순히 같은 비율로 누적 하지 않고 지수이동평균(Exponential Moving Average)을 사용하여 기울기를 업데이트 한다. 결국에는 AdaGrad와 비슷하지만 최근 기울기는 자주 반영하고 오래된 기울기는 조금만 반영한다. 
@@ -161,18 +161,18 @@ tags:
   $$E[g^2]_t = \beta E[g^2]_{t-1} + (1 - \beta) (\nabla_\theta J(\theta))^2$$
 
 
-  - $( E[g^2]_t )$는 시간 $( t )$에서의 기울기 제곱의 지수 이동 평균.
-  - $( \beta )$는 지수 이동 평균의 감쇠율(보통 0.9로 설정).
-  - $( \nabla_\theta J(\theta) )$는 현재 기울기.
+  - $ E[g^2]_t $는 시간 $ t $에서의 기울기 제곱의 지수 이동 평균.
+  - $ \beta $는 지수 이동 평균의 감쇠율(보통 0.9로 설정).
+  - $ \nabla_\theta J(\theta) $는 현재 기울기.
   <br/>  
 
 
   * **파라미터 업데이트 (Parameter Update)** 
-  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{E[g^2]_t} + \epsilon} \nabla_\theta J(\theta)$$
+  $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{E[g^2]_t} + \epsilon} \nabla_\theta J(\theta$$
 
-  - $( \theta )$는 모델 파라미터.
-  - $( \eta )$는 초기 학습률.
-  - $( \sqrt{E[g^2]_t} )$는 기울기 제곱의 지수 이동 평균의 제곱근.
+  - $ \theta $는 모델 파라미터.
+  - $ \eta $는 초기 학습률.
+  - $ \sqrt{E[g^2]_t} $는 기울기 제곱의 지수 이동 평균의 제곱근.
 
 
 ### 6) Adam(Adaptive Moment Estimation) 
@@ -187,13 +187,13 @@ tags:
   & \text{파라미터 업데이트:} \quad \theta \leftarrow \theta - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t
   \end{aligned}
   $$
-  - $( m_t )$는 시간 $( t )$에서의 1차 모멘트 추정치.
-  - $( v_t )$는 시간 $( t )$에서의 2차 모멘트 추정치.
-  - $( \beta_1 )$는 1차 모멘트 추정의 감쇠율(보통 0.9로 설정).
-  - $( \beta_2 )$는 2차 모멘트 추정의 감쇠율(보통 0.999로 설정).
-  - $( \nabla_\theta J(\theta) )$는 현재 기울기.
-  - $( \theta )$는 모델 파라미터.
-  - $( \eta )$는 학습률.
+  - $ m_t $는 시간 $ t $에서의 1차 모멘트 추정치.
+  - $ v_t $는 시간 $ t $에서의 2차 모멘트 추정치.
+  - $ \beta_1 $는 1차 모멘트 추정의 감쇠율(보통 0.9로 설정).
+  - $ \beta_2 $는 2차 모멘트 추정의 감쇠율(보통 0.999로 설정).
+  - $ \nabla_\theta J(\theta) $는 현재 기울기.
+  - $ \theta $는 모델 파라미터.
+  - $ \eta $는 학습률.
 
 ## 03. 끝마치며
   * 이번 포스팅에서는 손실함수와 최적화 알고리즘에 대해서 알아 보았다. 대표적으로 몇개 알아 보았지만, 포스팅에서 얘기한거 이외에도 많은 손실함수와 최적화 알고리즘이 있다.
