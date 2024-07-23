@@ -141,13 +141,15 @@ tags:
   <br/>  
 
     * **축적된 기울기 제곱합 (Accumulated Gradient Squared Sum)**
+    <br/>  
     $$G_t = G_{t-1} + (\nabla_\theta J(\theta))^2$$
-
+    <br/>  
     - $ G_t $는 시간 $ t $에서의 기울기의 제곱합.
     - $ \nabla_\theta J(\theta) $는 현재 기울기.
     <br/>
 
     * **파라미터 업데이트 (Parameter Update)**
+    <br/>  
     $$\theta \leftarrow \theta - \frac{\eta}{\sqrt{G_t} + \epsilon} \nabla_\theta J(\theta$$
     <br/>  
     - $ \theta $는 모델 파라미터.
