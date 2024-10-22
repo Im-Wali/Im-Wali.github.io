@@ -49,8 +49,8 @@ tags:
   * Fine-Tuning(파인 튜닝)은 사전 학습된 모델을 기반으로 특정 작업에 맞춰 모델을 세부적으로 조정하는 기법이다. 일반적으로 대규모 데이터셋에서 미리 학습된 모델을 사용하고, 이를 특정 도메인에 적합하도록 소규모 데이터셋에서 재학습시키는 과정을 의미한다. Fine-Tuning은 특히 딥러닝에서 널리 사용되는 방법으로, 모델의 성능을 개선하면서 학습 시간을 단축하는 데 유용하다.
   <br/>
 
-  ![image-center](/assets/images/2024-10-22_DepthAnything_01.jpg){: .align-center width="100%" height="100%"}
-  <div style="text-align: right"> [참고: https://arxiv.org/abs/2401.10891] </div>
+  ![image-center](/assets/images/2024-10-22_DepthAnything_05.jpg){: .align-center width="100%" height="100%"}
+  <div style="text-align: right"> [참고: https://medium.com/@prasadmahamulkar/fine-tuning-phi-2-a-step-by-step-guide-e672e7f1d009 ] </div>
   <br/>
 
 
